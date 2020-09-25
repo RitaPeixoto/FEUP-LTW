@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+       <title>Form</title>
+       <meta charset="UTF-8">
+   </head> 
+
+   <body>
+    <h1> Form</h1>
+
+       <form action="save.php" method="GET"> <!--switch between POST and get, take off the action to not show error-->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="radio" name="age" id="age" value="&lt;18">&lt;18<br>
+        <input type="radio" name="age" value="19-35">19-35<br>
+        <input type="radio" name="age" value="36-48">36-48<br>
+        <input type="radio" name="age" value="&gt;49">&gt;49<br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession"><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="portugal">Portugal</option>
+            <option value="england">England</option>
+            <option value="scotland">Scotland</option>
+            <option value="crotia">Crotia</option>
+            <option value="spain">Spain</option>
+        </select><br><br>
+
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" name="interests" id="interests" value="sports">Sports<br>
+        <input type="checkbox" name="interests" value="music">Music<br>
+        <input type="checkbox" name="interests" value="art">Art<br>
+        <input type="checkbox" name="interests" value="politics">Politics<br>
+        <input type="checkbox" name="interests" value="programming">Programming<br><br>
+
+        <label for="description">Please explain us how you found out about our website:</label><br>
+        <textarea name="description" rows="4" cols="50" id="description"></textarea> <br><br>
+
+        <input type="submit" value="Submit">
+
+
+       </form>
+
+
+   </body>
+</html>
