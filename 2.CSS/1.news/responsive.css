@@ -1,0 +1,60 @@
+@media (max-width: 60em){
+    #related{/* related is the sidebar */
+        display: none;
+    }
+
+    body{
+        width: 100%;
+        grid-template-columns: 100%; /*news, header and menu become the full window*/
+        grid-template-areas: "header" "menu" "news" "footer";
+    }
+
+    #news, body>footer{
+        margin-right:0;
+    }
+}
+
+@media(max-width: 30em){
+    body header h2{
+        display: none;
+    }
+
+    #related{/* related is the sidebar */
+        display: none;
+    }
+
+    body {
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "menu" "news" "footer";
+    }
+    #news, body>footer{
+        margin-right:0;
+    }
+
+    #signup{
+        position: relative;
+        bottom:0em;/*reverting what's done in layout to get it back on the left side*/
+        right:0em;
+    }
+    /* fazer o drop down*/
+
+    #menu .hamburger{
+        display:block;
+    }
+
+    #menu ul{
+        display: none;
+    }
+    #menu .hambuger::before{
+        color:white;
+        content: "\2630";
+
+    }
+
+    #menu #hamburger:checked + .hamburger::before {
+        color:white;
+        content: "\2715";
+    }
+
+
+}
