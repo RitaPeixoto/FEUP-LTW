@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    margin: auto;
+    
+}
+section{
+    padding: 2em;
+    margin: 1em;
+}
+
+#green{
+    order:3;
+}
+#yellow{
+    order:1;
+}
+#red{
+    order:2;
+}
+#orange{
+    order:4;
+    flex-grow: 1;
+}
+#blue{
+    order:5;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+}

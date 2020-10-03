@@ -11,13 +11,12 @@
     content: " said:";
 }
 
-.comment .date{
-    font-size: 1em;
+.comment .date{   
     position: absolute;
     right: 0;
 }
 
-.comment p::before{
+#news article .comment p::before{
     content: "\201C";
     font-size: 3em;
     position: relative;
@@ -26,7 +25,7 @@
     
 }
 
-.comment p{
+#news article .comment p{
     background-color: #EDEFF0;
     padding:1.2em;
     padding-top: 0em;
@@ -36,33 +35,24 @@
 #comments form {
     background-color: #EDEFF0;
     padding: 2em;
+    margin: 0.5rem;
 }
 
 #comments form h2 {
     font-size: 1em;
 }
 
-
-#comments label{
-    position: absolute;
-    background-color:  #EDEFF0;
-    border: none;
-    display: inline-block;
-    text-align: right;
-}
-
 #comments form input[type="text"], #comments form input[type="email"] {
-    display: inline-block;
     background-color:  #EDEFF0;
-    color:black;
     border: none;
     border-top: 2px solid gray;
     border-left: 2px solid gray;
 }
 
+
 #comments form textarea {
     width: 100%;
-    height: 6em;
+    height: 5em;
 }
 
 
@@ -72,3 +62,4 @@
     color: white;
     background-color: black;
 }
+
