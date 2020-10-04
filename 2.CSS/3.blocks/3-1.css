@@ -24,14 +24,3 @@ section{
 #blue{
     order:5;
 }
-
-ul{
-    padding: 0;
-}
-
-li{
-    background-color: white;
-    padding: 1em;
-    display: block;
-    margin: 1em;
-}

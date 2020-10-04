@@ -4,6 +4,7 @@
     }
 
     body{
+        display: initial;
         width: 100%;
         grid-template-columns: 100%; /*news, header and menu become the full window*/
         grid-template-areas: "header" "menu" "news" "footer";
@@ -14,7 +15,7 @@
     }
 }
 
-@media(max-width: 30em){
+@media(max-width: 120em){
     body header h2{
         display: none;
     }
@@ -31,20 +32,34 @@
         margin-right:0;
     }
 
+    #news article header{
+        background-color: whitesmoke;
+    }
+    #news article header a{
+        position: relative;
+        padding: 3em;
+        margin: 2em;
+        top: 0em;
+        color:black;
+        text-shadow: none;
+
+
+    }
+
     #signup{
         position: relative;
-        bottom:0em;/*reverting what's done in layout to get it back on the left side*/
-        right:0em;
+        bottom: 0em;/*reverting what's done in layout to get it back on the left side*/
+        right: 0em;
     }
     /* fazer o drop down*/
+  
 
-    #menu .hamburger{
-        display:block;
+    nav #hamburger{
+            display: block;
+        width: 100%;
+        background-color:#2A2F33;
     }
 
-    #menu ul{
-        display: none;
-    }
     #menu .hambuger::before{
         color:white;
         content: "\2630";

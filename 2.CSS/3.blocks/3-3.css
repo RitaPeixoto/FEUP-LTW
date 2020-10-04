@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 25% auto ;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "yellow yellow" "blue orange" "blue red" "blue green";
+    
+}
+
+section{
+    padding: 2em;
+    margin: 1em;
+    padding-top: 1em;
+}
+
+#green{
+    grid-area: green;
+    padding:5em;  
+    padding-top: 1em;
+    padding-left: 1.7em;
+}
+#blue{
+    grid-area: blue;
+}
+
+#yellow{
+    grid-area: yellow;
+}
+
+#yellow ul{
+    display: flex;
+}
+#orange{
+    grid-area: orange;
+    padding:5em; 
+    padding-top: 1em;
+    padding-left: 1.7em;
+}
+#red{
+    grid-area: red;
+}
+#red ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#yellow ul li, #red ul li{
+    flex-grow:1;
+}
+
+#yellow ul li:nth-child(1){
+    flex-grow:3;
+}
+
+

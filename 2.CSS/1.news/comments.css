@@ -5,6 +5,8 @@
 
 .comment .user{
     font-style:italic;
+    font-style: bold;
+
 }
 
 .comment .user::after{
@@ -13,6 +15,7 @@
 
 .comment .date{   
     position: absolute;
+    font-style:bold;
     right: 0;
 }
 
