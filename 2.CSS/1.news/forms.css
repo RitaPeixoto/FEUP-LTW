@@ -1,58 +1,59 @@
-body {
-    grid-template-rows: auto auto auto auto;
+
+form{
+    background-color: white;
+    color:black;
+    margin: 2em auto;
+    width: 20em;
+    padding: 1em;
 }
 
-
-#menu{
-    height: fit-content;
+label{
+    padding:1em;
 }
 
-#register, #login{
-    position: relative;
-}
+label, input {
+    display: block;
+  }
+  
+
 
 
 #register h1, #login h1{
     text-align: center;
 }
 
-
-
-#register form, #login form{
-
-    position: relative;
+input {
+    border: none;
     background-color: white;
-    margin: auto;
-    padding: 2em;
-    max-width: 18em;
-}
-
-
-#register form *, #login form *{
-    width:100%;
-    font-size:1.3em;
-    margin: 0.5em 0em 1em 0em;
-}
-
-
-#register form label input, #login form label input{
-    border:none;
+    color: black;
     border-bottom: 1px solid black;
-}
-
-
-#register form input[type="submit"],#login form input[type="submit"]{
+    margin-top: 1em;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  
+  input[type=submit] {
+    width: auto;
+  
     background-color: black;
     color: white;
-    display:block;
-    position: relative;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 0;
+  
+    border: none;
+    margin: 1em;
     padding: 1em;
-    font-size:0.9em;
-}
+    margin-left: auto;
+  }
+  
+  input:focus {
+    outline: none;
+    border-bottom: 1px solid #046dd5;
+  }
 
 
 
+@media (max-width: 30em) {
+    #register, #login {
+      background-color: white;
+    }
+  }
 

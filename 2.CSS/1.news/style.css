@@ -3,7 +3,7 @@
 }
 body{
     background-color: white;
-    font-family: Verdana; 
+    font-family: 'Verdana', sans-serif;
 }
 
 /*Header*/
@@ -16,9 +16,10 @@ body>header{
 }
 
 
-header a{
+body>header a{
     color:white;
     text-decoration: none;
+    font-size:0.8em;
 }
 
 header>h1{
@@ -26,7 +27,7 @@ header>h1{
     margin-bottom: 0.04em;
 }
 header>h2{
-    font-size:0.8em;
+    font-size:1em;
     margin-top:0.04em;
     margin-bottom: 0.05em;
 }
@@ -34,9 +35,7 @@ header>h2{
 #signup :nth-child(1) {
     font-size:0.8rem;
     padding-right:1em;
-    border-right-color: white;
-    border-right-style: solid;
-    border-width: 1px;
+    border-right:1px solid white;
 }
 
 #signup :nth-child(2) {
@@ -45,13 +44,14 @@ header>h2{
 }
 
 p{
-    font-family: Georgia;
+    font-family: Georgia, serif;
+    line-height: 1.4em;
 }
 
 
 /* Menu */
 
-nav #hamburger{
+nav #hamburger, .hamburger{
     display: none;
 }
 #menu a{
@@ -65,6 +65,9 @@ nav #hamburger{
     padding: 0;
 
 }
+#menu li:hover a{
+    color: white;
+  }
 
 #menu ul li{
     list-style: none;
@@ -143,6 +146,7 @@ nav #hamburger{
     width: 100%;
 }
 #news article header a{
+    color:white;
     background-color: transparent;
     font-size: 1.1rem;
     position: absolute;
@@ -161,12 +165,14 @@ nav #hamburger{
     font-size: xx-large;
 }
 
-
+#news header {
+    font-size: 1.5em;
+  }
 #news footer{
     background-color:#E1493E;
     color:white;
     padding:1.5em;
-    font-size:0.1rem;
+    font-size:0.8rem;
 }
 
 #news footer a{
@@ -199,7 +205,14 @@ body>footer{
     font-size:0.9em;
     background-color: #2A2F33;
     color: #ffffff;
-    padding: 0.3em;
-    padding-left: 1em;
-    margin-top: 1em;
+    padding: 1em;
+    height:1em;
+    margin-right: 1em;
 }
+body > footer p {
+    margin: 0;
+  }
+  
+#news footer .comments {
+    margin-left: 1em;
+  }
