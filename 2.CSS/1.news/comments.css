@@ -1,6 +1,7 @@
 #comments{
     color:black;
     padding:1em;
+
 }
 
 .comment .user{
@@ -16,7 +17,8 @@
 .comment .date{   
     position: absolute;
     font-style:bold;
-    float:right;
+    right:0;
+    
 }
 
 #news article .comment p::before{
@@ -39,6 +41,7 @@
     background-color: #EDEFF0;
     padding: 2em;
     margin: 0.5rem;
+    width: auto;
 }
 
 #comments form h2 {
@@ -50,6 +53,7 @@
     border: none;
     border-top: 2px solid gray;
     border-left: 2px solid gray;
+
 }
 
 
