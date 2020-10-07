@@ -1,0 +1,102 @@
+html{
+    background-color: black;
+    
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding-left: 40px;
+    background-image: url("./stripe.png");
+    background-repeat: repeat-y;
+    
+}
+
+
+#header{
+    background-color: black;
+    color:white;
+    padding:20px;
+}
+
+h1,h2,h3{
+    font-family: Georgia, serif;
+}
+
+#header h2{
+    font-size:100%;
+}
+
+#menu{
+    background-color: #333333;
+}
+
+#menu a{
+    color:black;
+    text-decoration: none;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 10px 0px;
+    margin: 0px;
+}
+#menu ul li{
+    display: inline;
+    margin:10px;
+    padding:0 10px;
+    margin-right: 0;
+    background-color: white;
+}
+#content{
+    padding: 0 10px;
+    width: 800px;
+}
+
+#content a{
+    text-decoration: none;
+    color:#883333;
+}
+
+#content .introduction{
+    font-style: italic;
+}
+#content .news-item {
+    border-bottom: 1px solid black;
+  }
+  
+#content h3{
+    font-size:170%;
+    margin:10px 0;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+#content ul {
+    list-style-type: none;
+    padding: 0;
+    padding: 3px 0px;
+    margin: 0px;
+    background-color: #333333;
+  }
+#content li{
+    align-items: left;
+    display:inline;
+    padding: 3px 10px;
+}
+
+#content img{
+    float:right;
+    padding: 0 10px 10px 0;
+}
+
+#content li a{
+    color:white;
+}
+
+
+#footer{
+    text-align: right;
+    width:800px;
+}
+

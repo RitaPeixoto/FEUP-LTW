@@ -5,7 +5,6 @@ html {
 body {
     width: 800px;
     margin: 0px auto;
-    font-family: times, serif;
     background-color: white;
   }
   
@@ -17,10 +16,11 @@ h1, h2{
     background-color: #666666;
 }
 
-body>header{
+
+#header{
     background-color: #666666;
     color:white;
-    padding:20px;
+    padding:30px;
 }
 
 
@@ -58,8 +58,10 @@ body>header{
 }
 
 #content h3{
-    font-size:200%;
+    font-size:170%;
     margin:10px 0;
+    font-weight: bold;
+    font-family: Verdana;
 }
 
 #content .introduction{
@@ -91,7 +93,8 @@ body>header{
     color:white;
 }
 
-footer{
-    padding: 0 10px;
+#footer{
+    margin-left:5px;
+    padding-top: 5px;
 }
 
