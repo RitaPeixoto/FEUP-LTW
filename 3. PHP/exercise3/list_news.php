@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include_once('database/connection.php'); // connects to the database
   include_once('database/news.php');       // loads the functions 
                                            

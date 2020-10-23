@@ -3,6 +3,9 @@
   include_once('database/connection.php'); // connects to the database
   include_once('database/news.php');       // loads the functions 
                                            
+    if (!array_key_exists('username',$_SESSION) || empty($_SESSION['username']))
+      header("Location: list_news.php");
+  
     $id = $_GET['id'];
     $article = getArticle($id);
 
