@@ -4,24 +4,17 @@
     <title>Super Legit News</title>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="layout.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
-    <link href="comments.css" rel="stylesheet">
-    <link href="forms.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/layout.css" rel="stylesheet">
+    <link href="style/responsive.css" rel="stylesheet">
+    <link href="style/comments.css" rel="stylesheet">
+    <link href="style/forms.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1><a href="list_news.php">Super Legit News</a></h1>
       <h2><a href="list_news.php">Where fake news are born!</a></h2>
-      <div id="signup">
-        <?php if (array_key_exists('username',$_SESSION) && !empty($_SESSION['username'])) {?>
-        <a href="action_logout.php">Logout</a>
-        <?php } else {?>
-        <a href="register.html">Register</a>
-        <a href="login.php">Login</a>
-        <?php }?>
-      </div>
+      
     </header>
     <nav id="menu">
       <!-- just for the hamburguer menu in responsive layout -->
