@@ -64,8 +64,8 @@ for (let input of inputs) {
 form.addEventListener('submit', function(event) {
     event.preventDefault();
  
-    const description = event.target[0].value;
-    const quantity = event.target[1].value;
+    let description = document.getElementsByName("description")[0].value
+    let quantity = document.getElementsByName("quantity")[0].value
  
     let tr = document.createElement('tr');
  
