@@ -25,43 +25,23 @@ form.addEventListener('submit', function(event){
     let description = document.getElementsByName("description")[0].value
     let quantity = document.getElementsByName("quantity")[0].value
 
-    
     let tr = document.createElement('tr') //create a new line
-
-    let td1 = document.createElement('td')
-    td1.innerHTML = description
-    tr.append(td1)
-
-    let td2 = document.createElement('td')
-    let quant = document.createElement('input')
-    quant.setAttribute('type', 'number')//to allow to have the key up and down
-    quant.setAttribute('value', quantity)
-    td2.append(quant)
-    tr.append(td2)
-
-    quant.addEventListener('change', function(event){
-        updateTotal();
-    })
-
-
-
-    let td3 = document.createElement('td')
-    let button = document.createElement('input')
-    button.setAttribute('type', 'submit')
-    button.setAttribute('value', 'Remove')
-    td3.append(button)
-    tr.append(td3)
-
-    button.onclick = (event) =>{ 
+ 
+    tr.innerHTML = `<tr><td>${description}</td><td><input type='number' value=${quantity}></td><td><input type='button' value='Remove'></td></tr>`
+ 
+    tr.querySelector('td:nth-child(2) input').keyup = function(event){
+        updateTotal()
+    }
+    tr.querySelector('td:nth-child(2) input').keydown = function(event){
+        updateTotal()
+    }
+    tr.querySelector('td:nth-child(3) input').onclick = function(event) {
         tr.remove()
         updateTotal()
     }
+        
 
-    
-    
-    
-
-    document.querySelector('#products tbody').append(tr)
+    document.getElementById('products').append(tr);
 
     updateTotal()
 
@@ -77,3 +57,4 @@ console.log(secondInput);
 let allInputs = document.querySelectorAll('form label input');
 for(let input of allInputs)
     console.log(input);
+
