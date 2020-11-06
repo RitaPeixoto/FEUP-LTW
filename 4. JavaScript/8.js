@@ -22,8 +22,8 @@ form.addEventListener('submit', function(event){
     event.preventDefault()
 
     //get the values submitted
-    let description = event.target[0].value
-    let quantity = event.target[1].value
+    let description = document.getElementsByName("description")[0].value
+    let quantity = document.getElementsByName("quantity")[0].value
 
     
     let tr = document.createElement('tr') //create a new line
@@ -53,7 +53,6 @@ form.addEventListener('submit', function(event){
     tr.append(td3)
 
     button.onclick = (event) =>{ 
-        event.preventDefault()
         tr.remove()
         updateTotal()
     }

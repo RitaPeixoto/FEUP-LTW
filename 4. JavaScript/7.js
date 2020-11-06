@@ -25,7 +25,6 @@ form.addEventListener('submit', function(event){
     td3.append(button)
 
     button.onclick = (event) =>{ //whats new
-        event.preventDefault()
         tr.remove()
     }
 
@@ -72,7 +71,6 @@ form.addEventListener('submit', function(event) {
     tr.innerHTML = `<tr><td>${description}</td><td><input type='number' value=${quantity}></td><td><input type='button' value='Remove'></td></tr>`
  
     tr.querySelector('td:nth-child(3) input').onclick = function(event) {
-        event.preventDefault()
         tr.remove()
     }
     
