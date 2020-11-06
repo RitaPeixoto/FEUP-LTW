@@ -5,8 +5,8 @@ Doesn't work this way, because the javascript code is being loaded and run befor
 
 
 window.addEventListener('load',function(){
-    let products = document.getElementById('products');
-    console.log(products);
+    let products = document.getElementById('products')
+    console.log(products)
 })
 
 
