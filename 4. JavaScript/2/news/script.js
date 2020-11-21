@@ -29,10 +29,37 @@ function submitComment(event){
     request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
 
     request.send(encodeForAjax({id: id, username: username, comment_id:comment_id, text:text}))
+}
+function receiveComments(){
+    response = JSON.parse(this.responseText)
+    comments = document.querySelector('#comments')
 
-    function receiveComments(){
-        console.log('hi')
-    }
+    response.forEach( function(comment) {
+        const comment_id = comment['id'];
+        const username = comment['username']
+        const text = comment['text']
+        const date = comment['published']
 
+        let newComment = document.createElement('article')
+        newComment.setAttribute('class', 'comment')
+        newComment.setAttribute('data-id', comment_id)
+
+        let userSpan = document.createElement('span')
+        userSpan.setAttribute('class', 'user')
+        userSpan.innerText = username
+
+        let dateSpan = document.createElement('span')
+        dateSpan.setAttribute('class', 'date')
+        dateSpan.innerText = date
+
+        let textP = document.createElement('p')
+        textP.innerText = text
+
+        userSpan.append(dateSpan)
+        newComment.append(userSpan)
+        newComment.append(textP)
+
+        comments.insertBefore(newComment, commentForm)
+    })
 
 }
