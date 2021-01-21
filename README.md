@@ -1,3 +1,5 @@
-# LTW - Linguagens e Tecnologias Web
+# FEUP - LTW
 
-Resolução dos exercícios das aulas práticas e exames dos anos anteriores
+## Linguagens e Tecnologias Web
+
+Resolução dos exercícios das aulas práticas + exames dos anos anteriores
