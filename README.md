@@ -2,4 +2,8 @@
 
 ## Linguagens e Tecnologias Web
 
-Resolução dos exercícios das aulas práticas + exames dos anos anteriores
+* Resolução dos exercícios das aulas práticas  
+* Resolução de exames dos anos anteriores
+* Projeto 
+
+Nota final do projeto: 18.3
